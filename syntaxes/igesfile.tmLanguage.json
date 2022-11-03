@@ -1,0 +1,33 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "igesfile",
+	"patterns": [
+		
+		{
+			"name": "keyword.control.iges",
+			"match": "(?!^.{72})[SGDPT](?=.{7}$)"
+		},
+		{
+			"name": "keyword.other.iges",
+			"match": "((\\d+)$)"
+		},
+		{
+			"name": "entity.name.class.iges",
+			"match": "(\\w(?=.{0,72}G))"
+		},
+		
+		{
+			"name": "constant.numeric.iges",
+			"match": "([0-9])"
+		},
+		{
+			"name": "keyword.control.iges",
+			"match": "([S|G|D|P](?!.*[S]))"
+		}
+		
+	],
+	
+	"scopeName": "source.iges"
+}
+
+
