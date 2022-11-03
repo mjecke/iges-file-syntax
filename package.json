@@ -1,0 +1,55 @@
+{
+	"name": "iges-file-syntax",
+	"displayName": "IGES File Syntax",
+	"description": "Syntax Highlighting for IGES CAD Files",
+	"version": "1.0.0",
+	"publisher": "mjecke",
+	"icon": "images/igesicon.png",
+	"engines": {
+		"vscode": "^1.37.0"
+	},
+	"author": {
+		"name": "Mike Eckert"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"keywords": [
+		"iges", "IGES", "igs", "IGS", ".IGES", ".igs", "CAD", "IGES file", "IGS file" 
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "igesfile",
+				"aliases": [
+					"iges File",
+					"igesfile",
+					"igs File"
+				],
+				"extensions": [
+					".iges",
+					".igs"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "igesfile",
+				"scopeName": "source.iges",
+				"path": "./syntaxes/igesfile.tmLanguage.json"
+			}
+		]
+	},
+	"homepage": "https://github.com/mjecke/iges-file-syntax",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mjecke/iges-file-syntax.git",
+		"bugs": {
+			"url": "https://github.com/mjecke/iges-file-syntax",
+			"email": "mje.dm6@gmail.com"
+		}
+	},
+	"license": "MIT"
+	
+}
